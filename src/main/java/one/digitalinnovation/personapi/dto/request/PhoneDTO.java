@@ -13,14 +13,14 @@ import javax.validation.constraints.Size;
 
 @Data
 @Builder
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class PhoneDTO {
 
     private Long id;
 
     @Enumerated(EnumType.STRING)
-    private PhoneType ype;
+    private PhoneType type;
 
     @NotEmpty
     @Size(min = 13, max = 14)
